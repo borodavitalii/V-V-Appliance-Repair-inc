@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V&V Appliance Repair</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #4CAF50; color: white; padding: 1em 0; text-align: center; }
+        nav { display: flex; justify-content: center; background-color: #333; }
+        nav a { color: white; padding: 1em; text-decoration: none; }
+        nav a:hover { background-color: #ddd; color: black; }
+        main { padding: 2em; }
+        footer { text-align: center; padding: 1em; background-color: #333; color: white; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>V&V Appliance Repair</h1>
+        <p>Your Trusted Appliance Repair Service in North Port, FL</p>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#appointment">Make an Appointment</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>We offer a wide range of appliance repair services including refrigerator repair, washing machine repair, oven repair, and more.</p>
+        </section>
+        <section id="appointment">
+            <h2>Make an Appointment</h2>
+            <form action="submit_appointment.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" required>
+                <br>
+                <label for="service">Service:</label>
+                <select id="service" name="service">
+                    <option value="refrigerator">Refrigerator Repair</option>
+                    <option value="washing_machine">Washing Machine Repair</option>
+                    <option value="oven">Oven Repair</option>
+                    <!-- Add more services as needed -->
+                </select>
+                <br>
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <section id="reviews">
+            <h2>Customer Reviews</h2>
+            <p>Read what our satisfied customers have to say about our services.</p>
+            <!-- Reviews will be displayed here -->
+        </section>
+    </main>
+    <footer>
+        <p>Contact us: 941-467-4492 | borodavitalii201191@gmail.com</p>
+        <p>© 2024 V&V Appliance Repair. All rights reserved.</p>
+    </footer>
+</body>
+</html>
